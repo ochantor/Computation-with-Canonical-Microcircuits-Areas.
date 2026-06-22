@@ -1,66 +1,281 @@
-# Dynamic Landscape Computation: Emergent Autonomy from Coupled Cortical Fields
+# Emergent Autonomy via Rotating Canonical Microcircuits and Distributed Space-Time Tissue
 
-**Author:** Dr. Oscar G. Chang  
-*Research Professor & Electronic Engineer* **ORCID:** [0000-0002-4336-7545](https://orcid.org/0000-0002-4336-7545)  
-**Academic Affiliation:** Yachay Tech University  
-**Degree:** PhD in Electrical Engineering (Pennsylvania State University)
-
----
-
-## Technical Draft: Thermodynamics of Logical Selection in Energy-Constrained Cortical Microcircuits (Paper 1)
-
-### 1. Introduction & The Core Hypothesis
-Current mainstream artificial intelligence paradigms rely heavily on history-dependent synaptic plasticity and massive data-driven training. This framework proposes an alternative neuromorphic paradigm: **Dynamic Landscape Computation**. 
-
-We demonstrate that complex, adaptive, and life-sustaining behaviors emerge from "Frame Zero" without any training iterations or local memory updates. The model replaces traditional synaptic weight-based arbitration with a strict **logical decision function** executed by coupled cortical fields.
-
-### 2. Mathematical Formalization of the N-Flop / One-Winner Mechanism
-The agent's brain simulates two independent cortical areas: a **Motivational Field** and a **Navigational Field**, each modeled as a closed ring of $N=25$ canonical microcircuits.
-
-#### 2.1. Excitatory Activation & Symmetry Breaking
-The competition within a group of redundant microcircuits is driven by an external excitatory K-ramp wave ($K(t)$). The internal state of a sigmoidal switching neuron $u_i$ within the $i$-th microcircuit responds to mutual inhibition according to:
-
-$$\tau \frac{du_i}{dt} = -u_i + \sigma\left( K(t) - \gamma \sum_{j \neq i}^N w_{ji} v_j + I_i^{\text{sensory}} \right)$$
-
-Where:
-* $\sigma(x) = \frac{1}{1 + e^{-x}}$ is the sigmoidal activation function representing the logical switch.
-* $\gamma$ is the negative feedback gain (mutual inhibition).
-* $I_i^{\text{sensory}}$ is the immediate, non-historical sensory input vector.
-
-The selection is history-independent. When $K(t)$ crosses a critical threshold, a rapid **symmetry breaking** occurs. The circuit that happens to have the infinitesimal energetic advantage silences all competitors, ensuring that only a single microcircuit emerges as the instantaneous winner:
-
-$$v_i(t) = \delta_{i, \text{winner}}$$
-
-### 3. Residual Exponential Activity Trails (The Functional Tissue)
-The instantaneous winner $v_i(t)$ immediately discharges glutamate. However, the true macroscopic computational state of the cortical field is not the single active winner, but an emergent, higher-order organizational tissue ($N+1$) woven by **exponential decay trails**.
-
-When a microcircuit wins, it leaves a persistent metabolic stencil. The activation trail $a_i$ of the $i$-th microcircuit updates at each discrete time frame according to:
-
-$$a_i(t) = \lambda a_i(t-1) + v_i(t)$$
-
-Where:
-* $\lambda \in (0, 1)$ is the exponential decay constant.
-
-As the creature rotates and navigates, the physical migration of winners across the circular microcircuit network weaves a continuous spatiotemporal field of activity.
-
-### 4. Energetics: "Dark Energy Burning" & Thermodynamic Cost
-The logical competition within the N-Flop architecture carries an intrinsic thermodynamic expense, modeled as **Dark Energy Burning**. The metabolic cost ($E_{\text{diss}}$) dissipated during the rapid symmetry-breaking phase is a function of the mutual inhibition conflict:
-
-$$E_{\text{diss}} = \alpha \sum_{i=1}^N \sum_{j \neq i}^N v_i v_j + \beta \int \left( \frac{du_i}{dt} \right)^2 dt$$
-
-#### 4.1. Cellular Roles & Reset Phase
-* **Neurons (Sigmoidal):** Execute the immediate logical switching and local glutamate/GABA discharge.
-* **Astrocytes:** Govern the metabolic management. They execute the "dark energy burning" process by clearing excess neurotransmitters from the synaptic cleft, resetting the system for the next computational frame.
-
-### 5. Macroscopic Gradient Relaxation
-The combined persistent activity trails of both fields mathematically deform a global potential energy landscape ($E_{\text{total}}$). The agent's final motor output vector ($m = [\dot{x}, \dot{y}]$) is not programmed; it is a direct physical relaxation along the negative gradient of this computed landscape:
-
-$$\mathbf{m} \propto -\nabla E_{\text{total}}(x, y)$$
-
-This ensures that the creature is continuously "falling" into the most homeostatically secure state calculated by its cortical microcircuits.
+**Author:** Dr. Oscar G. Chang
+**Core Architecture:** Dynamic Landscape Computation (DLC)
+**Reference Implementation:** `creature_multi_CM_D.py`
+**License:** GNU General Public License v3 (GPLv3)
 
 ---
 
-## Intellectual Property & Licensing
-Copyright (c) 2026 Dr. Oscar G. Chang.  
-Licensed under the GNU General Public License v3 (GPLv3). Mandatory academic attribution required for any derivative work or theoretical expansion.
+## Abstract
+
+This repository presents a minimal neuromorphic architecture in which adaptive behavior emerges without planners, symbolic rules, reinforcement learning, behavior trees, or explicit behavioral representations.
+
+The system consists of two independent cortical fields composed of competing canonical microcircuits. Each field continuously dissipates energy through local Winner-Take-All competition while interacting with environmental and homeostatic gradients.
+
+No microcircuit encodes food seeking, shelter seeking, predator avoidance, exploration, or resting behavior.
+
+Instead, these behaviors emerge from the continuous rotation of competitive winners through cortical space and from the persistence of activity traces forming a distributed space-time tissue.
+
+The central claim is simple:
+
+> Intelligence may emerge from rotating local competitions without requiring explicit behavioral programs.
+
+---
+
+# Core Claim
+
+The architecture makes a stronger claim than classical behavior-based systems:
+
+> Behaviors are never represented.
+
+Food seeking is not represented.
+
+Predator avoidance is not represented.
+
+Returning home is not represented.
+
+Exploration is not represented.
+
+Resting is not represented.
+
+Only local competitions between canonical microcircuits are represented.
+
+Behavior appears as a macroscopic consequence of distributed cortical dynamics.
+
+---
+
+# Architecture
+
+The reference implementation contains two independent cortical fields:
+
+| Field               | Function                                               |
+| ------------------- | ------------------------------------------------------ |
+| Motivational Cortex | Processes food, shelter, and predator gradients        |
+| Navigation Cortex   | Processes geometric confinement and boundary gradients |
+
+Both fields share the same underlying computational principle.
+
+Each contains a population of canonical microcircuits distributed over a circular manifold.
+
+---
+
+# Canonical Microcircuits
+
+A cortical field contains
+
+```math
+C=\{c_1,c_2,\ldots,c_N\}
+```
+
+canonical microcircuits.
+
+Each microcircuit possesses:
+
+* A preferred orientation
+* Local energetic weights
+* Exploratory stochasticity
+
+For the motivational cortex, the energy of microcircuit `i` is
+
+```math
+E_i=
+H\,W_i^{food}\cos(\theta_f-\phi_i)
++
+S\,W_i^{home}\cos(\theta_h-\phi_i)
+-
+D\,W_i^{pred}\cos(\theta_p-\phi_i)
++\eta_i
+```
+
+where:
+
+| Variable | Meaning            |
+| -------- | ------------------ |
+| H        | Hunger             |
+| S        | Safety demand      |
+| D        | Danger             |
+| θf       | Food direction     |
+| θh       | Shelter direction  |
+| θp       | Predator direction |
+| η        | Exploratory noise  |
+
+The winning microcircuit is selected through local N-Flop competition:
+
+```math
+w(t)=\mathrm{argmax}_i\,E_i(t)
+```
+
+No behavioral interpretation is attached to the winner.
+
+The winner only defines the direction of local energetic relaxation.
+
+---
+
+# Rotating Winners
+
+Environmental geometry continuously changes.
+
+Homeostatic variables continuously change.
+
+Therefore:
+
+```math
+E_i(t+\Delta t)\neq E_i(t)
+```
+
+which implies
+
+```math
+w(t+\Delta t)\neq w(t)
+```
+
+The winner migrates through cortical space.
+
+This continuous winner migration constitutes the primary computational mechanism of the architecture.
+
+Rather than storing behaviors, the system continuously regenerates them.
+
+---
+
+# Distributed Space-Time Tissue
+
+Winning states are not immediately erased.
+
+Activity evolves according to
+
+```math
+A_i(t+1)=\lambda A_i(t)+I_i(t)
+```
+
+where
+
+```math
+0<\lambda<1
+```
+
+and
+
+```math
+I_i(t)=
+\begin{cases}
+1 & \text{if } i=w(t) \\
+0 & \text{otherwise}
+\end{cases}
+```
+
+The resulting activity traces create a distributed space-time tissue.
+
+This tissue preserves recent competitive history without symbolic memory, stored goals, or planning structures.
+
+---
+
+# Cortical Coupling
+
+The two cortical fields operate independently.
+
+Motor output emerges from their interaction:
+
+```math
+\mathbf{M}
+=
+\alpha\mathbf{M}_{mot}
++
+\beta\mathbf{M}_{nav}
+```
+
+where
+
+```math
+\mathbf{M}_{mot}
+=
+\sum_i A_i^{mot}
+\begin{bmatrix}
+\cos\phi_i\\
+\sin\phi_i
+\end{bmatrix}
+```
+
+and
+
+```math
+\mathbf{M}_{nav}
+=
+\sum_i A_i^{nav}
+\begin{bmatrix}
+\cos\phi_i\\
+\sin\phi_i
+\end{bmatrix}
+```
+
+Neither cortical field possesses knowledge of the other's internal state.
+
+Behavior emerges from the interaction of independently dissipating energy landscapes.
+
+---
+
+# Emergent Behaviors
+
+The reference implementation demonstrates:
+
+* Food acquisition
+* Shelter seeking
+* Predator avoidance
+* Boundary avoidance
+* Exploration
+* Rest-state dynamics
+
+without:
+
+* Reinforcement learning
+* Behavior trees
+* Symbolic reasoning
+* Search algorithms
+* Stored goals
+* Behavioral modules
+* Central controllers
+
+The observed behaviors arise entirely from local competition and activity persistence.
+
+---
+
+# Why This Matters
+
+Most artificial systems explicitly encode behaviors.
+
+This architecture does not.
+
+The implementation suggests that coherent adaptive behavior may emerge from:
+
+1. Local competition
+2. Energy dissipation
+3. Activity persistence
+4. Rotating cortical dynamics
+
+without requiring explicit behavioral representations.
+
+If correct, increasingly complex cognition may emerge from larger collections of interacting cortical fields operating under the same principles.
+
+---
+
+# Repository Purpose
+
+This repository is intended as a minimal computational demonstration of a simple hypothesis:
+
+> Complex adaptive behavior can emerge from rotating canonical microcircuits whose activity persists within a distributed space-time tissue.
+
+The implementation intentionally minimizes assumptions in order to expose the underlying computational principle as clearly as possible.
+
+---
+
+# Citation
+
+```bibtex
+@misc{chang2026dlc,
+  author = {Oscar G. Chang},
+  title = {Emergent Autonomy via Rotating Canonical Microcircuits and Distributed Space-Time Tissue},
+  year = {2026},
+  note = {Dynamic Landscape Computation (DLC)}
+}
+```
+
