@@ -10,7 +10,7 @@
 
 The most advanced biological intelligence on Earth does not look like modern artificial intelligence. It is not built from feed-forward layer upon layer of deep, gigantic, monolithic neural connections. 
 
-Instead, the mammalian neocortex is an intricate, vast landscape formed by hundreds of thousands—millions—of microscopic, repeating cells that tightly cover the entire cortical surface like a vast, biological honeycomb. These are the **cortical microcircuits** (CM), or cortical minicolumns. First discovered and conceptualized by the pioneering neurophysiologist **Vernon Mountcastle in 1957**, these canonical structures represent the fundamental, modular computational units of mammalian cognition, included humans.
+Instead, the mammalian neocortex is an intricate, vast landscape formed by hundreds of thousands—millions—of microscopic, repeating cells that tightly cover the entire cortical surface like a vast, biological honeycomb. These are the **cortical microcircuits** (CM), or cortical minicolumns. First discovered and conceptualized by the pioneering neurophysiologist **Vernon Mountcastle in 1957**, these canonical structures represent the fundamental, modular computational units of mammalian cognition, including humans.
 
 Artificial systems typically treat the brain as a massive, deep feed-forward processor that transforms inputs into explicit behavioral representations. This repository challenges that assumption by looking directly at the raw, localized dynamics of the cortical honeycomb.
 
@@ -54,11 +54,11 @@ Without relying on:
 * Explicit behavioral representations
 
 Besides:
-No microcircuit represents food-seeking.  
-No microcircuit represents predator avoidance.  
-No microcircuit represents exploration.  
+* No microcircuit represents food-seeking.
+* No microcircuit represents predator avoidance.
+* No microcircuit represents exploration.
 
-Only local energetic competitions are represented. Behavior emerges purely as a consequence of the dynamics of cortical areas interaccion.
+Only local energetic competitions are represented. Behavior emerges purely as a consequence of the dynamics of cortical area interaction.
 
 ---
 
@@ -157,7 +157,7 @@ This tissue does not store goals, plans, or behaviors. It stores the residual co
 
 ## Motor Synthesis
 
-Motor behavior emerges from the interaction of two cuasi identical and independent cortical fields:
+Motor behavior emerges from the interaction of two quasi-identical and independent cortical fields:
 
 $$M = \alpha M_{\text{mot}} + \beta M_{\text{nav}}$$
 
@@ -185,7 +185,7 @@ Winner migration is suppressed. Adaptive behavior collapses.
 
 ---
 
-The observed creature behavior therefore do not emerge from isolated microcircuits alone. They emerge from the interaction between **winner rotation** , **activity persistence** and two coupled cortical areas.
+The observed creature behavior therefore does not emerge from isolated microcircuits alone. They emerge from the interaction between **winner rotation** , **activity persistence** and two coupled cortical areas.
 
 ---
 
@@ -209,7 +209,7 @@ If this principle scales, increasingly complex cognition may emerge from larger 
 
 This repository is not intended to be a complete theory of intelligence. It is a computational demonstration of a specific hypothesis:
 
-> Adaptive behavior can emerge from rotating winner trajectories embedded within persistent distributed, coupled cortical tissues.
+> Adaptive behavior can emerge, without local memory, from rotating winner trajectories embedded within coupled cortical tissues that are both persistent and rotated.
 
 The implementation is intentionally simple so that the computational principle remains visible.
 
@@ -219,7 +219,7 @@ The implementation is intentionally simple so that the computational principle r
 
 ```bibtex
 @misc{chang2026dlc,
-  author = {Oscar G. Chang},
+  author = {Chang, Oscar G. and Perez, Jonathan and Meneces, Amy},
   title = {Dynamic Landscape Computation: Adaptive Behavior from Rotating Winner Trajectories},
   year = {2026}
 }
