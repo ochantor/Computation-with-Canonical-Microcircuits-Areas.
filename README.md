@@ -6,6 +6,15 @@
 **Autor:** Oscar Chang, Ph.D.
 
 ---
+## Beyond the Stack: The Honeycomb Architecture of the Mind
+
+The most advanced biological intelligence on Earth does not look like modern artificial intelligence. It is not built from feed-forward layer upon layer of monolithic neural connections. 
+
+Instead, the mammalian neocortex is an intricate, vast landscape formed by hundreds of thousands—millions—of microscopic, repeating cells that tightly tile the entire cortical surface like a biological honeycomb. These are the **cortical microcircuits**, or cortical minicolumns. First discovered and conceptualized by the pioneering neurophysiologist **Vernon Mountcastle in 1957**, these canonical structures represent the fundamental, modular computational units of mammalian cognition.
+
+Artificial systems typically treat the brain as a massive feed-forward processor that transforms inputs into explicit behavioral representations. This repository challenges that assumption by looking directly at the raw, localized dynamics of the cortical honeycomb.
+
+---
 
 ## The Question
 
