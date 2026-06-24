@@ -8,7 +8,7 @@ import winsound
 import time
 
 # ============================================================
-# ESTADO DEL MUNDO (VALORES INICIALES)
+# WORLD STATE (INITIAL VALUES)
 # ============================================================
 
 pos = np.array([0.0, 0.0])
@@ -20,7 +20,7 @@ danger = 0.0
 border_stress = 0.0  
 
 # ============================================================
-# ENTIDADES DINÁMICAS
+# DYNAMIC ENTITIES
 # ============================================================
 
 food_pos = np.array([0.65, 0.45])
@@ -46,7 +46,7 @@ food_lock = False
 home_lock = False
 
 # ============================================================
-# BIOLOGICAL BRAIN: DOS ÁREAS CORTICALES SEPARADAS (N=25 c/u)
+# BIOLOGICAL BRAIN: TWO CORTICALS SEPARATED AREAS (N=25 c/u)
 # ============================================================
 
 N = 25
@@ -82,7 +82,7 @@ core_mot = [(r, c) for r in range(8, 13) for c in range(3, 8)]
 core_nav = [(r, c) for r in range(8, 13) for c in range(13, 18)]
 
 # ============================================================
-# FIGURA
+# FIGURE
 # ============================================================
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 5))
@@ -108,7 +108,7 @@ img = ax2.imshow(brain, vmin=0, vmax=1, cmap='inferno')
 ax2.axvline(10, color='white', linestyle=':', alpha=0.2)
 
 # ============================================================
-# FUNCIÓN DE REINICIO
+# RESTAR FUNCTION
 # ============================================================
 
 def reset_system():
@@ -155,14 +155,14 @@ def update(frame):
     global food_lock, home_lock
 
     # ========================================================
-    # DISTANCIAS CRÍTICAS
+    # CRITICAL DISTANCES
     # ========================================================
     dist_food = np.linalg.norm(pos - food_pos)
     dist_home = np.linalg.norm(pos - home_pos)
     dist_pred = np.linalg.norm(pos - pred_pos)
 
     # ========================================================
-    # HOMEOSTASIS Y FILTRO DE HISTÉRESIS
+    # HOMEOSTASIS AND HISTERESIS FILTER
     # ========================================================
     hunger += 0.0028 * time_warp  
 
@@ -209,7 +209,7 @@ def update(frame):
         border_stress = 0.0
 
     # ========================================================
-    # MOTION ENTIDADES
+    # MOTION ENTITIES
     # ========================================================
     food_theta += 0.015 * time_warp
     food_pos = np.array([food_radius * np.cos(food_theta), 0.55 * np.sin(1.7 * food_theta)])
@@ -250,7 +250,7 @@ def update(frame):
     if dist_home > 0.18: home_lock = False
 
     # ========================================================
-    # DIRECCIONES SENSORIALES
+    # SENSORIALES DIRECTIONS
     # ========================================================
     vec_food = food_pos - pos
     vec_home = home_pos - pos
@@ -273,7 +273,7 @@ def update(frame):
     angle_border = np.arctan2(vec_border_continuo[1], vec_border_continuo[0])
 
     # ========================================================
-    # COMPETENCIA LOCAL N-FLOP POR ÁREA
+    # LOCAL COMPETENCE ONE N-FLOP PER ÁREA
     # ========================================================
     energies_mot = np.zeros(N)
     for i, cm in enumerate(cms_mot):
@@ -300,7 +300,7 @@ def update(frame):
     winner_nav = np.argmax(energies_nav)
 
     # ========================================================
-    # INTEGRACIÓN DE DECAY (ESPACIALMENTE DISPERSO EN REPOSO)
+    # DECAY INTEGRATION (SPACE DISPERSE AT REST)
     # ========================================================
     if decay_mode:
         activity_mot *= (0.92 ** time_warp)
@@ -367,7 +367,7 @@ def update(frame):
     pos = np.clip(pos, -0.95, 0.95)
 
     # ========================================================
-    # MAPA VISUAL CORTICAL (TEJIDO ESPACIO-TIEMPO)
+    # CORTICAL VISUAL MAP (SPACE-TIEMPO TISSUE)
     # ========================================================
     brain *= 0.82  
     
@@ -382,7 +382,7 @@ def update(frame):
     brain = np.clip(brain, 0, 1)
 
     # ========================================================
-    # INTERFAZ GRÁFICA
+    # GRAPHIC INTERFACE
     # ========================================================
     dot.set_data([pos[0]], [pos[1]])
     head = pos + 0.12 * np.array([np.cos(theta), np.sin(theta)])
