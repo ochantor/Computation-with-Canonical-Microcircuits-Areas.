@@ -3,7 +3,7 @@
 ## Adaptive Behavior from Rotating Cortical Microcircuits
 ### A Minimal Demonstration that Behavior Need Not Be Represented
 
-**Autor:** Oscar Chang, Ph.D. Jonathan Perez, B.Sc. Amy Meneces, B.Sc
+Authors: Oscar Chang, Ph.D., Jonathan Perez, B.Sc., Amy Meneces, B.Sc.
 
 ---
 ## Beyond the Stack: The Honeycomb Architecture of the Mind
@@ -185,7 +185,7 @@ Winner migration is suppressed. Adaptive behavior collapses.
 
 ---
 
-The observed creature behavior therefore does not emerge from isolated microcircuits alone. They emerge from the interaction between **winner rotation** , **activity persistence** and two coupled cortical areas.
+The observed creature behavior therefore does not emerge from isolated microcircuits alone. It emerges from the interaction between winner rotation, activity persistence, and two coupled cortical areas.
 
 ---
 
