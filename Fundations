@@ -1,0 +1,274 @@
+# FOUNDATIONS
+
+## Rotating Canonical Microcircuits and Distributed Space-Time Tissue
+
+### Abstract
+
+This project explores a computational framework in which adaptive behavior emerges from the interaction of energy-dissipating competitive microcircuits organized into distributed tissues.
+
+Rather than relying on symbolic representations, centralized planning, or large memory stores, the proposed architecture generates behavior through local competition, exponential persistence of activity, and cooperation among multiple cortical-like tissues.
+
+The framework investigates how highly compressed seeds can be rotationally deployed into higher-dimensional space-time domains where continuous energy consumption sustains activity traces capable of supporting prediction and adaptive control.
+
+---
+
+# 1. Introduction
+
+Natural organisms exhibit robust adaptive behavior despite operating under severe energetic constraints.
+
+This repository explores the hypothesis that prediction and adaptive intelligence may emerge from competitive tissues that continuously dissipate energy and maintain distributed traces of recent activity.
+
+The objective is not to model cognition through explicit representations, but to investigate how behavioral competence may arise from the geometry and persistence of distributed activity itself.
+
+---
+
+# 2. Canonical Competitive Microcircuits
+
+The basic computational element is a Canonical Microcircuit (CM).
+
+Each CM receives local sensory and homeostatic influences and participates in a competitive process with neighboring CMs.
+
+The winning microcircuit is selected through instantaneous N-Flop competition:
+
+```text
+w(t) = argmax_i E_i(t)
+```
+
+where:
+
+* E_i(t) is the competitive energy of microcircuit i.
+* w(t) is the winning microcircuit at time t.
+
+No behavioral interpretation is attached to the winner.
+
+The winner simply becomes the dominant contributor to the tissue state.
+
+---
+
+# 3. Rotational Deployment
+
+The framework assumes that highly compressed structures can be rotationally deployed into larger computational domains.
+
+A deployed seed occupies a larger space-time tissue than its generating description.
+
+Conceptually:
+
+```text
+Compressed Seed  -->  Deployed Tissue
+```
+
+Deployment is not learning.
+
+Deployment is a structural transformation that creates a new computational substrate.
+
+Once deployed, the tissue becomes the ambient within which future activity unfolds.
+
+---
+
+# 4. Energy Dissipation and Persistent Activity
+
+After deployment, tissues continuously consume energy.
+
+Energy dissipation does not create the tissue.
+
+Energy dissipation sustains the tissue.
+
+Each microcircuit contributes to a persistent activity stela:
+
+```text
+S_i(t+Δt) = λ S_i(t) + A_i(t)
+```
+
+where:
+
+* S_i is the persistent activity trace.
+* A_i is the instantaneous activation.
+* λ is the decay coefficient.
+* 0 < λ < 1.
+
+The stela preserves a graded record of recent activity.
+
+Recent events remain strongly represented while older events gradually fade.
+
+---
+
+# 5. Space-Time Tissue
+
+The collection of all persistent traces forms a distributed space-time tissue.
+
+Unlike conventional memory systems, information is not stored as discrete records.
+
+Instead, the past remains partially present through ongoing activity decay.
+
+The tissue therefore contains simultaneously:
+
+* present sensory influences,
+* residual traces of previous activity.
+
+Incoming signals interact with both.
+
+This creates a continuously evolving dynamical field.
+
+---
+
+# 6. Prediction Through Persistence
+
+Prediction is proposed to emerge from the interaction between present inputs and the residual structure of the stela.
+
+A simplified expression is:
+
+```text
+P(t) ∝ ∫ I(τ) exp[-k(t-τ)] dτ
+```
+
+where:
+
+* I(τ) represents incoming information.
+* k controls the decay rate.
+
+The equation expresses the idea that present decisions depend on a continuously weighted history of recent activity.
+
+No explicit world model is required.
+
+Prediction emerges from persistence itself.
+
+---
+
+# 7. Motivational Tissue
+
+In the current implementation, one tissue evaluates homeostatic variables including:
+
+* hunger,
+* shelter attraction,
+* predator pressure,
+* exploratory tendencies.
+
+The tissue generates a motor field:
+
+```text
+M_mot = Σ S_i v_i
+```
+
+where:
+
+* S_i is the activity of microcircuit i.
+* v_i is its preferred direction.
+
+The resulting field biases behavior toward homeostatic goals.
+
+---
+
+# 8. Navigational Tissue
+
+A second tissue evaluates geometric variables including:
+
+* boundary proximity,
+* confinement stress,
+* environmental structure.
+
+The tissue generates an independent motor field:
+
+```text
+M_nav = Σ S_i v_i
+```
+
+This field biases behavior toward geometrically safe trajectories.
+
+---
+
+# 9. Cooperative Motor Synthesis
+
+The final motor command emerges from cooperation between tissues.
+
+In the current simulation:
+
+```text
+M_final = (1 - β) M_mot + β M_nav
+```
+
+where:
+
+```text
+0 ≤ β ≤ 1
+```
+
+and β depends on contextual variables such as border stress.
+
+This equation represents a central property of the architecture:
+
+Behavior is not stored inside any individual tissue.
+
+Behavior emerges from the interaction of multiple tissues.
+
+---
+
+# 10. Hierarchical Organization
+
+The framework distinguishes multiple organizational levels.
+
+```text
+N      : Competitive Microcircuits
+
+N + 1  : Deployed Space-Time Tissues
+
+N + 2  : Cooperative Tissue Dynamics
+```
+
+At level N:
+
+* local competition occurs.
+
+At level N+1:
+
+* tissues emerge as distributed computational fields.
+
+At level N+2:
+
+* multiple tissues cooperate to generate adaptive behaviors unavailable to isolated tissues.
+
+The current simulation demonstrates this principle through the interaction between motivational and navigational tissues.
+
+---
+
+# 11. Central Hypothesis
+
+The central hypothesis of this project is:
+
+A deployed, highly compressed seed is rotationally deployed so as to occupy tissue in a higher-dimensional space-time domain than its generating components.
+
+Continuous energy consumption in this new ambient sustains a distributed activity stela whose exponential decay preserves a graded trace of recent history.
+
+Incoming homeostatic signals interact with this living temporal structure, causing information to propagate through a field shaped simultaneously by present inputs and residual past activity.
+
+Prediction emerges naturally from this interaction, not from explicit internal models, but from the persistence of the stela itself and the cooperation of tissues.
+
+---
+
+# 12. Research Direction
+
+This repository is not intended as a finished theory.
+
+It is an experimental platform for investigating:
+
+* rotational deployment,
+* competitive tissue dynamics,
+* distributed prediction,
+* energy dissipation,
+* tissue cooperation,
+* emergence across hierarchical levels.
+
+The long-term objective is to understand how increasingly rich adaptive histories can emerge from simple local competitive mechanisms.
+
+---
+
+# Philosophy
+
+A genome does not contain a creature.
+
+A seed does not contain a forest.
+
+A microcircuit does not contain a story.
+
+Stories emerge when deployed structures persist long enough in space and time to generate new trajectories of interaction.
+
+This repository explores the possibility that intelligence may arise through the same principle.
