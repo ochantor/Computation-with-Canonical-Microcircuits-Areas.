@@ -61,7 +61,7 @@ Where:
 
 Deployment is not learning.
 
-It is a structural transformation that creates a new computational substrate.
+It is a structural transformation that creates a new computational substrate or working tissue.
 
 Once deployed, the tissue becomes the ambient environment within which future activity unfolds.
 
@@ -148,6 +148,8 @@ The equation expresses the idea that present decisions depend on a continuously 
 
 No explicit world model is required.
 
+No explicit local memory is required.
+
 Prediction emerges from persistence itself.
 
 ---
@@ -220,16 +222,19 @@ It emerges from the interaction of multiple tissues.
 
 The framework distinguishes multiple organizational levels:
 
-* Level N: Competitive Microcircuits
-* Level N+1: Distributed Space-Time Tissue
-* Level N+2: Cooperative Tissue Dynamics
+Level N: Competitive Microcircuits
+Level N+1: Distributed Space-Time Tissue
+Level N+2: Narrative and Relational Structures
 
 At Level N, local competition occurs.
 
-At Level N+1, tissues emerge as distributed computational fields.
+At Level N+1, tissues emerge as distributed computational fields sustained by persistent activity traces. Adaptive behavior, navigation, homeostatic regulation, and survival-oriented control arise at this level.
 
-At Level N+2, multiple tissues cooperate to generate adaptive behaviors unavailable to isolated tissues.
+At Level N+2, higher-order structures emerge that cannot be localized to any individual microcircuit or tissue in N+1. Examples include persistent identities, relationships, conflicts, goals, alliances, discoveries, shared histories, and narratives.
 
+These structures exist only as distributed organizations extended through space and time.
+
+The present repository focuses primarily on Levels N and N+1. The emergence of N+2 structures remains a long-term research direction.
 ---
 
 ## 11. Central Hypothesis
