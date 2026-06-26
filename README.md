@@ -14,7 +14,7 @@ Instead, the mammalian neocortex is an intricate, vast landscape formed by hundr
 
 Artificial systems typically treat the brain as a massive, deep feed-forward processor that transforms inputs into explicit behavioral representations. This repository challenges that assumption by looking directly at the raw, localized dynamics of the cortical honeycomb.
 
-![Cortical Microcircuits](Cortical_Microcircuits.png)
+![Cortical Microcircuits](Cortical%20Microcircuits.png)
 
 ---
 
