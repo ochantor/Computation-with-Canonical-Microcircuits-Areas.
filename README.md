@@ -54,6 +54,7 @@ Without relying on:
 * Symbolic goals
 * Centralized controllers
 * Explicit behavioral representations
+* State machine
 
 Besides:
 * No microcircuit represents food-seeking.
@@ -211,7 +212,7 @@ If this principle scales, increasingly complex cognition may emerge from larger 
 
 This repository is not intended to be a complete theory of intelligence. It is a computational demonstration of a specific hypothesis:
 
-> Adaptive behavior can emerge, without local memory, from rotating winner trajectories embedded within coupled cortical tissues that are both persistent and rotated.
+> Adaptive behavior can emerge, without local memory or state machine, from rotating winner trajectories embedded within coupled cortical tissues that are both persistent and rotated.
 
 The implementation is intentionally simple so that the computational principle remains visible.
 
