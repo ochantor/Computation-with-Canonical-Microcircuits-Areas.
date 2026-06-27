@@ -48,17 +48,17 @@ And then—this is the key—**they compete.**
 
 The unit that best satisfies all these needs at once wins. It doesn't "decide" anything. It just... wins. And its direction becomes the creature's direction.
 
-There is no thought here. No plan. No memory. Just competition.
+There is no thought here. No plan. No memory. No state machine, Just... competition.
 
 ---
 
-## The Secret: They Don't Forget
+## The Secret: Rotate your canonical structure to create new space-time tissue
 
 But here's where it gets magical.
 
-When a unit wins, its activity doesn't just disappear. It **lingers**. Like a scent in the air. Like a footprint in sand. The activity slowly fades, but not instantly. For a few moments, the creature "remembers" which direction it was going.
+When a unit wins, its activity doesn't just disappear. It **lingers**. Like a scent in the air. Like a footprint in a space-time tissue create in the new, affordable environemnt by rotanig a cononical structure. The activity slowly fades, but not instantly. For a few moments, the creature "remembers" in its own tissue in which direction it was going.
 
-This lingering is not memory. It's more like... inertia. Like ripples on a pond that haven't quite settled.
+This lingering is not memory. It's more like... inertia. Like ripples on a pond that haven't quite settled but contains space-time information about the creature's life.
 
 And because of this lingering, the creature doesn't jerk around wildly. Its movements are smooth. Its behavior has continuity. It seems purposeful, even though there is no purpose.
 
@@ -119,11 +119,11 @@ You realize that your own mind might work this way. That when you decide to eat,
 
 We are not containers for thoughts.
 
-We are processes. Flows. Persistent patterns sustained by quiet energy.
+We are processes. Flows. Persistent patterns sustained by "dark" energy.
 
 A thought is not a thing you have.
 
-**A thought is something you are.**
+**A thought is something you are and burn energy for.**
 
 ---
 
