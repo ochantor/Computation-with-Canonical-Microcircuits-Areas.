@@ -135,7 +135,7 @@ And yet, it survives.
 
 It finds food. It returns home. It avoids danger. It explores. It rests.
 
-If it can do all of this without memory...
+If it can do all of this without a local memory or a state machine...
 
 What else might we be wrong about?
 
